@@ -1,40 +1,74 @@
 // out: ../css/media.css
 
 @media screen and (max-width: 1000px) {
-    .header {
-        &__menu {
-            display: none;
-        }
+  .header {
+    &__menu {
+      display: none;
     }
+  }
+
+  .works {
+    &__grid--column {
+      flex: 0 1 32% !important;
+    }
+  }
 }
 
 @media screen and (max-width: 700px) {
-    .header {
-        &__menu, &__auth {
-            display: none;
-        }
-        &__burger {
-            display: block;
-        }
-    }
-    .container {
-        padding: 0 16px;
+  .header {
+
+    &__menu,
+    &__auth {
+      display: none;
     }
 
-    .top {
-        .slick-next,
-        .slick-prev {
-            display: none !important;
+    &__burger {
+      display: block;
+    }
+  }
+
+  .container {
+    padding: 0 16px;
+  }
+
+  .top {
+
+    .slick-next,
+    .slick-prev {
+      display: none !important;
+    }
+
+    &__categories {
+      a {
+        &:first-child {
+          margin-left: 16px;
         }
-        &__categories {
-          a {
-            &:first-child {
-              margin-left: 16px;
-            }
-            &:last-child {
-              margin-right: 16px;
-            }
-          }
+
+        &:last-child {
+          margin-right: 16px;
         }
       }
+    }
+  }
+
+  .works {
+    &__grid--column {
+      flex: 0 1 48% !important;
+    }
+  }
+}
+
+
+@media screen and (max-width: 570px) {
+  .header {
+    &__menu {
+      display: none;
+    }
+  }
+
+  .works {
+    &__grid--column {
+      flex: 0 1 100% !important;
+    }
+  }
 }

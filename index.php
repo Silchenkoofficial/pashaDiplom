@@ -22,10 +22,10 @@
     <div class="container">
         <h1>Лучшие авторские работы</h1>
         <div class="works__grid">
-            <div class="works__grid--column"></div>
-            <div class="works__grid--column"></div>
-            <div class="works__grid--column"></div>
-            <div class="works__grid--column"></div>
+            <!-- <div class="works__grid--column"></div> -->
+            <!-- <div class="works__grid--column"></div> -->
+            <!-- <div class="works__grid--column"></div> -->
+            <!-- <div class="works__grid--column"></div> -->
         </div>
         <h1>NEXT SECTION</h1>
     </div>
