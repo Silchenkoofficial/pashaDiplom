@@ -1,0 +1,27 @@
+@media screen and (max-width: 1000px) {
+  .header__menu {
+    display: none;
+  }
+}
+@media screen and (max-width: 700px) {
+  .header__menu,
+  .header__auth {
+    display: none;
+  }
+  .header__burger {
+    display: block;
+  }
+  .container {
+    padding: 0 16px;
+  }
+  .top .slick-next,
+  .top .slick-prev {
+    display: none !important;
+  }
+  .top__categories a:first-child {
+    margin-left: 16px;
+  }
+  .top__categories a:last-child {
+    margin-right: 16px;
+  }
+}

@@ -1,0 +1,40 @@
+// out: ../css/media.css
+
+@media screen and (max-width: 1000px) {
+    .header {
+        &__menu {
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .header {
+        &__menu, &__auth {
+            display: none;
+        }
+        &__burger {
+            display: block;
+        }
+    }
+    .container {
+        padding: 0 16px;
+    }
+
+    .top {
+        .slick-next,
+        .slick-prev {
+            display: none !important;
+        }
+        &__categories {
+          a {
+            &:first-child {
+              margin-left: 16px;
+            }
+            &:last-child {
+              margin-right: 16px;
+            }
+          }
+        }
+      }
+}
